@@ -7,7 +7,7 @@
 %endif
 
 Name:      ec2-net-utils
-Summary:   A set of tools for running in EC2
+Summary:   A set of tools for automatic discovery and configuration of network interfaces in AWS cloud
 Version:   1.0
 Release:   2%{?_buildid}%{?dist}
 License:   Apache License 2.0
@@ -46,9 +46,8 @@ Requires:  upstart
 BuildRequires: systemd-units
 %endif
 
-
 %description
-ec2-utils contains a set of utilities for running in ec2.
+A set of tools for automatic discovery and configuration of network interfaces in AWS cloud.
 
 %prep
 
