@@ -1,4 +1,4 @@
-## ec2-net-utils for Fedora/systemd
+## ec2-net-utils for RHEL/systemd/upstart
 
 This is a fork of Amazon's ec2-utils with modifications to support Elastic Network Interfaces (ENI) under systemd.
 
