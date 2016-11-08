@@ -10,7 +10,7 @@ mkdir -p ~/rpmbuild/{BUILD,BUILDROOT,RPMS,SOURCES,SPECS,SRPMS}
 
 Copy folders SOURCES and SPECS from ec2-net-utils into the corresponding folders under ~/rpmbuild/
 
-Under the folder ~/rpmbuild/SPECS run 'rpmbuild -ba ec2-utils.spec'
+Under the folder ~/rpmbuild/SPECS run 'rpmbuild -ba ec2-net-utils.spec'
 
 * Imporant! Don't forget to enable the `elastic-network-interfaces` systemd unit, or ENI's won't work at boot!
 
