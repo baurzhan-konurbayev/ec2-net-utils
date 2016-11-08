@@ -5,8 +5,11 @@ This is a fork of Amazon's ec2-utils with modifications to support Elastic Netwo
 The spec file produces RPM ec2-net-utils.  The ec2-net-utils RPM contains ENI support.  It allows you to attach an ENI to a running instance and have it work as you would expect.
 
 ## Install
+Make directories structures for RPM building:
+mkdir -p ~/rpmbuild/{BUILD,BUILDROOT,RPMS,SOURCES,SPECS,SRPMS}
 
-Copy folders SOURCES and SPECS into the folder ~/rpmbuild/
+Copy folders SOURCES and SPECS from ec2-net-utils into the corresponding folders under ~/rpmbuild/
+
 Under the folder ~/rpmbuild/SPECS run 'rpmbuild -ba ec2-utils.spec'
 
 * Imporant! Don't forget to enable the `elastic-network-interfaces` systemd unit, or ENI's won't work at boot!
